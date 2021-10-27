@@ -28,35 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lb_flag = new System.Windows.Forms.Label();
             this.panel_details = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // label1
+            // lb_flag
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Report";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Doanh thu",
-            "Kho hàng"});
-            this.comboBox1.Location = new System.Drawing.Point(91, 9);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.Sorted = true;
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.TabStop = false;
-            this.comboBox1.Text = "Kho hàng";
+            this.lb_flag.AutoSize = true;
+            this.lb_flag.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_flag.Location = new System.Drawing.Point(12, 9);
+            this.lb_flag.Name = "lb_flag";
+            this.lb_flag.Size = new System.Drawing.Size(100, 24);
+            this.lb_flag.TabIndex = 0;
+            this.lb_flag.Text = "Kho hàng";
             // 
             // panel_details
             // 
@@ -72,8 +56,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 570);
             this.Controls.Add(this.panel_details);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_flag);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Report";
             this.Text = "Report";
@@ -84,8 +67,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Panel panel_details;
+        private System.Windows.Forms.Label lb_flag;
+        public System.Windows.Forms.Panel panel_details;
     }
 }

@@ -139,6 +139,12 @@
     <Compile Include="myForm\DoanhThu.Designer.cs">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </Compile>
+    <Compile Include="myForm\DoanhThuNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myForm\DoanhThuNgay.Designer.cs">
+      <DependentUpon>DoanhThuNgay.cs</DependentUpon>
+    </Compile>
     <Compile Include="myForm\KhoHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,8 +171,14 @@
     <EmbeddedResource Include="myForm\DoanhThu.resx">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="myForm\DoanhThuNgay.resx">
+      <DependentUpon>DoanhThuNgay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="myForm\KhoHang.resx">
       <DependentUpon>KhoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myForm\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

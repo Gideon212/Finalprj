@@ -19,7 +19,18 @@ namespace Finalprj
 
         private void panel_main_DoubleClick(object sender, EventArgs e)
         {
-            myForm.Report child = new myForm.Report();
+
+        }
+
+        private void Btn_khohang_Click(object sender, EventArgs e)
+        {
+            myForm.Report child = new myForm.Report("Kho hàng");
+            AllUser.OpenChildForm(child, panel_main);
+        }
+
+        private void Btn_doanhthu_Click(object sender, EventArgs e)
+        {
+            myForm.Report child = new myForm.Report("Doanh thu");
             AllUser.OpenChildForm(child, panel_main);
         }
     }

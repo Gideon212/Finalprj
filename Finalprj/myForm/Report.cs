@@ -12,19 +12,39 @@ namespace Finalprj.myForm
 {
     public partial class Report : Form
     {
+        public string BtnFlag { get; set; }
+
         public Report()
         {
             InitializeComponent();
-            Load();
+            //Load();
         }
 
-        private new void Load()
-        {
-            //myForm.KhoHang child = new myForm.KhoHang();
-            //AllUser.OpenChildForm(child, panel_details);
 
-            myForm.DoanhThu child = new myForm.DoanhThu();
-            AllUser.OpenChildForm(child,panel_details);
+        public Report(string btnflag)
+        {
+            InitializeComponent();
+            Load(btnflag);
+        }
+
+        private new void Load(string btnflag)
+        {
+            lb_flag.Text = btnflag;
+            switch (btnflag) 
+            {
+                case "Kho hàng":
+                    myForm.KhoHang khchild = new myForm.KhoHang();
+                    AllUser.OpenChildForm(khchild, panel_details);
+                    break;
+                case "Doanh thu":
+                    myForm.DoanhThu dtchild = new myForm.DoanhThu();
+                    AllUser.OpenChildForm(dtchild, panel_details); 
+                    break;
+                    
+                default: 
+                    break;
+            }
+
         }
     }
 }

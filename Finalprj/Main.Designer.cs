@@ -32,6 +32,9 @@
             this.panel_menu = new System.Windows.Forms.Panel();
             this.panel_tool = new System.Windows.Forms.Panel();
             this.panel_main = new System.Windows.Forms.Panel();
+            this.Btn_khohang = new System.Windows.Forms.Button();
+            this.Btn_doanhthu = new System.Windows.Forms.Button();
+            this.panel_menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_logo
@@ -45,6 +48,8 @@
             // panel_menu
             // 
             this.panel_menu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel_menu.Controls.Add(this.Btn_doanhthu);
+            this.panel_menu.Controls.Add(this.Btn_khohang);
             this.panel_menu.Location = new System.Drawing.Point(0, 100);
             this.panel_menu.Name = "panel_menu";
             this.panel_menu.Size = new System.Drawing.Size(100, 500);
@@ -67,6 +72,30 @@
             this.panel_main.TabIndex = 3;
             this.panel_main.DoubleClick += new System.EventHandler(this.panel_main_DoubleClick);
             // 
+            // Btn_khohang
+            // 
+            this.Btn_khohang.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn_khohang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_khohang.Location = new System.Drawing.Point(0, 0);
+            this.Btn_khohang.Name = "Btn_khohang";
+            this.Btn_khohang.Size = new System.Drawing.Size(100, 50);
+            this.Btn_khohang.TabIndex = 0;
+            this.Btn_khohang.Text = "ho hàng";
+            this.Btn_khohang.UseVisualStyleBackColor = false;
+            this.Btn_khohang.Click += new System.EventHandler(this.Btn_khohang_Click);
+            // 
+            // Btn_doanhthu
+            // 
+            this.Btn_doanhthu.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn_doanhthu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_doanhthu.Location = new System.Drawing.Point(0, 50);
+            this.Btn_doanhthu.Name = "Btn_doanhthu";
+            this.Btn_doanhthu.Size = new System.Drawing.Size(100, 50);
+            this.Btn_doanhthu.TabIndex = 0;
+            this.Btn_doanhthu.Text = "Doanh thu";
+            this.Btn_doanhthu.UseVisualStyleBackColor = false;
+            this.Btn_doanhthu.Click += new System.EventHandler(this.Btn_doanhthu_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -78,6 +107,7 @@
             this.Controls.Add(this.panel_logo);
             this.Name = "Main";
             this.Text = "Main";
+            this.panel_menu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -88,5 +118,7 @@
         private System.Windows.Forms.Panel panel_menu;
         private System.Windows.Forms.Panel panel_tool;
         private System.Windows.Forms.Panel panel_main;
+        private System.Windows.Forms.Button Btn_doanhthu;
+        private System.Windows.Forms.Button Btn_khohang;
     }
 }
